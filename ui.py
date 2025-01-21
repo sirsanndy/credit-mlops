@@ -4,7 +4,7 @@ import streamlit as st
 # Function to make a prediction request
 def get_prediction(data):
     print(data)
-    response = requests.post('http://13.250.109.123:8000/predict', json=data)
+    response = requests.post('http://localhost:8000/predict', json=data)
     return response.json()
 
 # UI setup
