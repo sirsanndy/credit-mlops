@@ -10,3 +10,13 @@ services:
       - "8080:8080"
     env_file:
       - .env
+  ui: 
+    build:
+        context: .
+        dockerfile: ui/Dockerfile
+    image: sirsanndy/ui_mlops
+    container_name: ui_mlops
+    ports:
+      - "8051:8051"
+    env_file:
+      - .env
