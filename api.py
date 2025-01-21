@@ -32,7 +32,7 @@ class Item(pydantic.BaseModel):
 @app.post("/predict") 
 def predict(item: Item): 
     dotenv.load_dotenv(".env")
-    mlflow.set_tracking_uri(uri = "http://13.250.109.123:5000")
+    mlflow.set_tracking_uri(uri = "http://localhost:5000")
     model = mlflow.sklearn.load_model("models:/RandomForestClassifier@rfc")
     
     # Convert input data to pandas DataFrame 
