@@ -57,7 +57,7 @@ jobs:
         echo "MODEL_ALIAS=${{ secrets.MODEL_ALIAS_STAGE }}" >> .env
     - name: Deploy to EC2
       run: |
-        ssh deploy_ec2 "rm -f docker-compose.yaml"
-        scp docker-compose.yaml .env deploy_ec2:.
+        ssh deploy_ec2 "rm -f docker-compose.yml"
+        scp docker-compose.yml .env deploy_ec2:.
         ssh deploy_ec2 "sudo docker compose down && sudo docker system prune -af"
         ssh deploy_ec2 "sudo docker compose pull && sudo docker compose up -d"
