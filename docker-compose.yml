@@ -1,0 +1,12 @@
+name: credit_mlops
+services:
+  api: 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sirsanndy/credit_mlops
+    container_name: credit_mlops
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
