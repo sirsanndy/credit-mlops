@@ -16,5 +16,5 @@ RUN \
     pip install --upgrade pip && \
     pip install wheel && \
     pip install -r requirements.txt
-EXPOSE 8080
+EXPOSE 8000
 CMD ["python", "api.py"]
