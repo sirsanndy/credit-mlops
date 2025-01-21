@@ -1,6 +1,5 @@
 import requests
 import streamlit as st
-import api as api
 
 # Function to make a prediction request
 def get_prediction(data):
