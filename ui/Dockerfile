@@ -11,4 +11,4 @@ RUN \
     pip install wheel && \
     pip install -r requirements.txt
 EXPOSE 8051
-CMD ["streamlit run --server.port=8051", "ui.py"]
+CMD ["streamlit", "run", "--server.port=8051", "ui.py"]
