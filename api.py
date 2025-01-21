@@ -1,5 +1,5 @@
-import src.utils as utils
-import src.preprocessing as preprocessing
+import utils as utils
+import preprocessing as preprocessing
 import pandas as pd
 from fastapi import FastAPI
 import pydantic
