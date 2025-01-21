@@ -10,9 +10,6 @@ import dotenv
 
 app = FastAPI()
 
-random_forest_model = utils.deserialize_data("models/RandomForest_model.pkl")
-logistic_regression_mode = utils.deserialize_data("models/LogisticRegression_model.pkl")
-sgd_model = utils.deserialize_data("models/SGD_model.pkl")
 ohe_loan_grade = utils.deserialize_data("models/ohe_loan_grade.pkl")
 ohe_loan_intent = utils.deserialize_data("models/ohe_loan_intent.pkl")
 ohe_home_ownership = utils.deserialize_data("models/ohe_home_ownership.pkl")
